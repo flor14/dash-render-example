@@ -9,6 +9,9 @@ cars = data.cars()
 # Setup app and layout/frontend
 app = dash.Dash(__name__, 
                  external_stylesheets=[dbc.themes.MINTY])
+
+server = app.server
+
 app.layout = html.Div([
     html.H1('Dash App'),
     html.Iframe(
